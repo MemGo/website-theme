@@ -6,4 +6,4 @@ deployment:
   production:
     branch: master
     commands:
-      - scp -r . memgo@ssh.memgo.org:/var/www/memgo.org/content/themes/website-theme/
+      - rsync -r . memgo@ssh.memgo.org:/var/www/memgo.org/content/themes/website-theme/
