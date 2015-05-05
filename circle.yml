@@ -7,3 +7,4 @@ deployment:
     branch: master
     commands:
       - rsync -r . memgo@ssh.memgo.org:/var/www/memgo.org/content/themes/website-theme/
+      - ssh memgo@ssh.memgo.org "supervisorctl restart memgo"
