@@ -5,14 +5,9 @@
 		{{/if}}
 		<h1 class="blogtitle_magnum">
 			<a title="{{@blog.title}}" href='{{@blog.url}}'>
-			{{{@blog.title}}}
+				<img src='{{asset "img/memgo-logotype.svg"}}' />
 			</a>
 		</h1>
-		<h4 class="blogdescription_magnum">
-			<a title="{{@blog.title}}" href='{{@blog.url}}' class="darker_magnum">
-			{{@blog.description}}
-			</a>
-		</h4>
 	</div>
 {{ else }}
 	<div role='banner' class="header_magnum">
@@ -21,13 +16,8 @@
 		{{/if}}
 		<h1 class="blogtitle_magnum">
 			<a title="{{@blog.title}}" href='{{@blog.url}}'>
-			{{{@blog.title}}}
+				<img src='{{asset "img/memgo-logotype.svg"}}' />
 			</a>
 		</h1>
-		<h4 class="blogdescription_magnum">
-			<a title="{{@blog.title}}" href='{{@blog.url}}'>
-			{{@blog.description}}
-			</a>
-		</h4>
 	</div>
 {{/if}}
